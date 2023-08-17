@@ -1,0 +1,250 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[verylight]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+%\usepackage{fontawesome5}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.25\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+%\section*{Start}
+
+\simpleheader{headercolour}{Joanna}{Macnar}{joanna.macnar@gmail.com}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushleft
+\bg{cvgreen}{white}{Skills} \\[0.5em]
+PyMOL~•~UCSF Chimera~•~\\BioShell~•~Rosetta~•~\\GROMACS~•~Maestro\\\vspace{2mm} ligand docking: Rosetta~•~AutoDock~•~Glide\\\vspace{2mm}protein modelling: \\ Rosetta \& pyRosetta, HKL3000 \vspace{3mm }
+%\bigskip
+
+\bg{cvgreen}{white}{Operating systems} \\[0.5em]
+\texttt{Linux (Unix)} ~/~ \texttt{Windows}\\
+\vspace{3mm }%\bigskip
+\bg{cvgreen}{white}{Programming} \\[0.5em]
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.13}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{bash} &  \barrule{0.11}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.05}{0.5em}{cvpurple} \\     
+     \bg{skilllabelcolour}{iconcolour}{SQL} & \barrule{0.05}{0.5em}{cvpurple}
+\end{tabular}
+
+%\vspace{3mm }%\bigskip
+\bg{cvgreen}{white}{Languages}\\[0.5em]
+\begin{tabular}{l | ll}
+\textbf{Polish} & C2 & {\phantom{x}\footnotesize native} \\
+\textbf{English} & C1 & {\phantom{x}\footnotesize fluent}\\
+\end{tabular}
+\vspace{3mm }%\bigskip
+
+\bg{cvgreen}{white}{Other qualifications}\\[0.5em]
+{Highschool Chemistry teacher national qualifications}
+%\textsc{Faculty of Chemistry, University of Warsaw}
+\vspace{3mm }
+
+%\bg{cvgreen}{white}{Activities}\\[0.5em]}
+%\begin{tabular}{p{0.04\textwidth}p{0.15\textwidth}}%{>{\footnotesize\bfseries} >{\footnotesize}p{0.15\textwidth}}
+%\begin{tabular}{p{0.05\textwidth}p{0.15\textwidth}}%{>{\footnotesize\bfseries} >{\footnotesize}p{0.15\textwidth}}
+%2017/21 \textbf{Chairwoman of the Faculty PhD Students’ Councils }{\normalfont of {MISMaP}}
+%\textsc{University of Warsaw}\\
+%2020 &
+%  \textbf{Participant}
+%  \textsc{PyRosetta Bootcamp}\\
+%2017--now \textbf{Workshop Leader \& Tutor} \href{https://fundusz.org/en/}{\textsc{Polish Children's Fund}}\\
+%2018--now \textbf{Member of the Rosetta Commons}\\
+%2018--now \textbf{Member of the Polish Bioinformatics Society}\\
+%2019/23 \textbf{Member of the Scientific Council of the Discipline of Chemical Sciences},\textsc{University of Warsaw}\\
+%2021--now \textbf{Member of the Justice, Equity, Diversity, \& Inclusion (JEDI) Committee},
+%\textsc{Rosetta Commons}\\
+%\end{tabular}
+
+\bg{cvgreen}{white}{Awards}\\[0.5em]
+%\begin{tabular}{p{0.04\textwidth}p{0.15\textwidth}}%{>{\footnotesize\bfseries} >{\footnotesize}p{0.15\textwidth}}
+    2022 \href{https://www.rosettacommons.org/about/rosetta-service-award}{\textsc{Rosetta Commons} Service Award}\vspace{0.5em}\\
+    2017/18 \href{http://www.chem.uw.edu.pl/en/awards/piotr-wrona-prize/}{Piotr Wrona Prize}\newline \textsc{Faculty of Chemistry, University of Warsaw}\vspace{0.5em}\\
+    2017  Best poster presentation during Master Students' Poster Session \textsc{Faculty of Chemistry, University of Warsaw\vspace{0.5em}}\\
+    2016/17 Polish Ministry of Science and Higher Education Scholarship for outstanding scientific achievements
+%\end{tabular}
+
+%\infobubble{\faAt}{cvgreen}{white}{jack@sparrow.org}
+%\infobubble{\faTwitter}{cvgreen}{white}{@sparrow}
+\vspace{6mm}
+\infobubble{\faOrcid}{cvgreen}{white}{\href{https://orcid.org/0000-0003-1760-2668}{0003-1760-2668}}\\
+\infobubble{\faLinkedin}{cvgreen}{white}{\href{https://linkedin.com/in/joanna-macnar-994597208}{Joanna Macnar}}
+%\infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/JMacnar}{JMacnar}}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Experience}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{\begin{tabular}[r]{@{}l@{}}Oct 2017\\ -- Jun 2023\end{tabular}}{Laboratory of Theory of Biopolymers --\newline Dominik Gront Research Group}{Ph.D. researcher}{University of Warsaw, Poland}{•~developed BioShell 3.0 software--python developer \hfill \break ~•~revealed Tremellomycetes CYP51s' preference for lanosterol and itraconazole via extensive docking study using Rosetta Ligand Docking \hfill \break ~•~analyzed and identified the causes of unusual conformations of aliphatic rings of HEPES and MES in proteins structures from X-ray crystallography--data mining, protein structure refinement}{LTB_logo.png} \vspace{-1em} \\ 
+    %developing BioShell software\\
+    %research on CYP451--ligand interactions using Rosetta Ligand Docking\\
+    %data mining in protein structures determination
+    \cvevent{\begin{tabular}[r]{@{}l@{}}Apr 2019\\ -- Feb 2022\end{tabular}}{Wladek Minor's Laboratory}{Research Assistant}{University of Virginia School of Medicine, Charlottesville}{•~ built PostgreSQL Database using Python and RDKit for \href{https://checkmyblob.bioreproducibility.org/server/}{CheckMyBlob} training, co-developed the clustering rules \hfill \break ~•~analyzed and identified the causes of unusual conformations of aliphatic rings of HEPES and MES in proteins structures from X-ray crystallography \hfill \break ~•~ performed extensive \href{https://checkmyblob.bioreproducibility.org/server/}{CheckMyBlob} server testing}{logo_UVa_blue.png}  \vspace{-1em}\\
+    \cvevent{\begin{tabular}[r]{@{}l@{}}Oct 2014\\ -- Jun 2017\end{tabular}}{Interdisciplinary Laboratory of Biological Systems Modelling -- Joanna Sulkowska Research Group}{B.Sc. and M.Sc. Researcher}{ University of Warsaw, Poland}{•~analysed selective inhibition of knotted proteins using protein-ligand docking and MD simulations \hfill \break ~•~conducted organic syntheses of TrmD inhibitors}{ILMUB_logo.png} \vspace{-1em}\\
+    \cvevent{\begin{tabular}[r]{@{}l@{}}Jan -- Feb\\ 2023\end{tabular}}{Ajasja Ljubeti\v c's Laboratory\hfill}{Research Assistant}{Kemijski inštitut - National Institute of Chemistry, Ljubljana, Slovenia\hfill}{•~ implemented geometry-analysis of ligands in PDB deposits into Google Colab \hfill}{Logo_KI.png}  \vspace{-1em}\\
+%    \cvevent{10--12/2020}{Rosetta Undergrad Collaborative Workshop}{Intructor's assistant}{University of California, Davis, on-line}{•~participated as a guest expert during session introducing to PyMOL \hfill \break ~•~co-instructed during PyMOL and PyRosetta sessions %COŚ JESZCZE JEDNEGO 
+%    }{RUC_logo_small.png} \vspace{-1em} \\
+    \cvevent{\begin{tabular}[r]{@{}l@{}}Mar -- Apr\\ 2017\end{tabular}}{Ya-ming Hou's Laboratory}{Research Assistant}{Thomas Jefferson University, Philadelphia}{•~conducted protein--ligand ITC measurements of TrmD inhibitors \hfill \break ~•~operated Thermo--Shift Assay}{logo-ThJ.png}
+\end{tabular}
+%\vspace{0.5em}
+
+\begin{minipage}[t]{0.7\textwidth}
+\section*{Education}
+\begin{tabular}{r p{0.7\textwidth} c}
+    \cvdegree{2017--2023}{Ph.D. {\normalfont in Chemistry}}{ \href{http://mismap.uw.edu.pl/en/ }{College of Inter-faculty Individual Studies in Mathematics and Natural Sciences}}{\footnotesize University of Warsaw}{}{}\vspace{-1.1em} \\
+    \cvdegree{2015--2017}{M.Sc. {in Chemistry (cum laude)} \normalfont{GPA~4.91/5.0}}{within { \href{http://mismap.uw.edu.pl/en/}{College of Inter-faculty Individual Studies in Mathematics and Natural Sciences}}}{\footnotesize University of Warsaw }{}{} \vspace{-1.1em} \\
+    \cvdegree{2012--2015}{B.Sc. {in Chemistry} \normalfont{GPA~4.25/5.0}}{within { \href{http://mismap.uw.edu.pl/en/}{College of Inter-faculty Individual Studies in Mathematics and Natural Sciences}}}{\footnotesize University of Warsaw }{}{}\vspace{-1.5em} \\
+\end{tabular}
+\end{minipage}\hfill
+%\begin{minipage}[t]{0.3\textwidth}
+%\section*{Awards}
+%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+%    2022 & Rosetta Commons Service Award \newline
+%\textsc{Rosetta Commons}\vspace{0.5em}\\
+%    2017/2018 &\href{http://www.chem.uw.edu.pl/en/awards/piotr-wrona-prize/}{Piotr Wrona Prize}\newline \textsc{Faculty of Chemistry, University of Warsaw}\vspace{0.5em}\\
+%    2017 & Best poster presentation during Master Students' Poster Session\newline \textsc{Faculty of Chemistry, University of Warsaw\vspace{0.5em}}\\
+%    2016/2017& Polish Ministry of Science and Higher Education Scholarship for outstanding scientific achievements
+%\end{tabular}
+%\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\section*{Research grants}
+\begin{tabular}{r p{0.7\textwidth} c}
+%\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+\begin{tabular}[r]{@{}l@{}}2020 -- 2023\\ ~~\end{tabular} &
+\textbf{Principal Investigator }{\normalfont {Preludium 18 grant, Polish National Science Centre \textit{``Conformation analysis of organic compounds in macromolecular structures''}}}\textsc{[No. 2019/35/N/ST6/04459]}\\
+
+\begin{tabular}[r]{@{}l@{}}Apr -- Sep\\ 2020\end{tabular} &
+\textbf{Principal Investigator }{\normalfont {Mini-grants for PhD students conducting research at the Faculty of Chemistry of the University of Warsaw 2020; \textit{``Web application for modeling loops in protein crystallographic structures using Rosetta software''}}}{}\\
+ %   ~•~preparation a loop modeling script  based on PyRosetta - Python\\
+ %   ~•~web server development - Python\\
+ %   ~•~development of an user interface for a web server
+\begin{tabular}[r]{@{}l@{}}2019 -- 2022\\~~ \end{tabular}  &
+\textbf{Scholarship-doctoral student }{\normalfont {Opus 15 for Prof. Dominik Gront, Polish National Science Centre, \textit{``Combination of the Rosetta method with the coarse-grained SURPASS model into a new multi-scale algorithm for modeling proteins and their complexes''}}}\textsc{[No. 2018/29/B/ST6/01989]}\\
+  %  ~•~BioShell3.0 software development (Python) and validation\\
+  %  ~•~P450 protein family mining, structure prediction and ligand-protein docking\\
+\end{tabular}
+%\end{tabular}
+\end{minipage}\hfill
+
+\vspace{-0.4em}
+\begin{minipage}[t]{0.7\textwidth}
+\vspace{-0.4em}\section*{Activities}
+\begin{tabular}{>{}r >{}p{0.8\textwidth}}
+2017--2021 &
+\textbf{Chairwoman of the Faculty Council of Doctoral Students }{\normalfont { \href{http://mismap.uw.edu.pl/en/ }{College of Inter-faculty Individual Studies in Mathematics and Natural Sciences}}}\vspace{-0.15em}\newline
+\textsc{University of Warsaw\vspace{-0.15em}\newline}
+~•~Represented the interests of doctoral students in the structures of the university\vspace{-0.15em}\\
+%2020 &
+%  \textbf{Participant}
+%  \textsc{PyRosetta Bootcamp}\\
+2017--now &
+\textbf{Workshop Leader \& Tutor} \href{https://fundusz.org/en/}{\textsc{Polish Children's Fund}}\vspace{-0.15em}\newline
+~•~Co-organization of science camps for elementary school students\vspace{-0.15em}\newline
+~•~Lead laboratory and computer workshops in chemistry for elementary and high school students\vspace{-0.15em}\newline
+~•~Tutoring during interdisciplinary camps and workshops at scientific institutions\vspace{-0.15em}
+\\
+2018--now &
+  \textbf{Member of the Rosetta Commons}\vspace{-0.15em}\\
+2018--now &
+  \textbf{Member of the Polish Bioinformatics Society}\vspace{-0.15em}\\
+2019--now &
+\textbf{Member of the Scientific Council of the Discipline of Chemical Sciences}\newline \textsc{University of Warsaw}\vspace{-0.15em}\newline
+~•~Represented the interests of doctoral students in the Scientific Council, i.e. formulating examination requirements for awarding doctoral degrees in chemical sciences\vspace{-0.15em}\\
+2021--now &
+  \textbf{Member of the Justice, Equity, Diversity, \& Inclusion (JEDI) Committee}\vspace{-0.15em}\newline
+  \textsc{Rosetta Commons}\\
+\end{tabular}
+\end{minipage}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\section*{Conference oral presentations}
+\begin{enumerate}
+    \item  D. Brzezinski, P. J. Porebski, M. Kowiel, \underline{J. M. Macnar,} W. Minor, ``Looking-glass against the wall, which ligand fits to this electron density blob?'', PreRosettaCon, Seattle, WA, USA, August, 6 2023\vspace{-0.4em}
+    
+    \item \underline{J. M. Macnar}, D. Brzezinski, D. Gront ``Analysis of common buffer molecules' conformations in ligand-protein complexes'', the 33rd edition of the European Crystallography Meeting, Versai, France, August, 23-27 2022\vspace{-0.4em}
+
+    \item \underline{J. M. Macnar}, \& Justyna D. Kryś, ``PyRosetta Web Application - general idea and loop modeling'', Winter RosettaCON 2020, New York, NY, USA, February, 9-11 2020\vspace{-0.4em}
+    
+    \item  \underline{J. M. Macnar}, Daria Wultańska, Dominik Gront, ``Biased modeling in centroid model \textit{ab~initio} structure prediction'', Winter RosettaCON 2019, Philadelphia, PA, USA, February, 25--26 2019\vspace{-0.4em}
+
+    \item \underline{J. M. Macnar}, ``The influence of the QM- calculated ligands’ charge distribution on the docking results'', EMBO Workshop on Computational Biology III, Serock, Poland, March, 3-5 2017\vspace{-0.4em}
+    
+    \item \underline{J. M. Macnar}, ``Gaussian Network Model analysis of knots'' function in the ATCase/OTCase proteins'', EMBO Workshop on Computational Biology II, Jabłonna, Poland, April, 8-10 2016\vspace{-0.4em}
+
+    \item \underline{J. M. Macnar}, ``On Selective Inhibitors of Bacterial t-RNA-(N1G37) Methyltransferase (TrmD)'', EMBO Workshop on Computational Biology I, Goniądz, Poland, February, 20-22 2015
+
+\end{enumerate}
+\end{minipage}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\section*{Publications}
+%\printbibliography[heading=none]
+%\nocite{agata_p_perlinska_molecular_2016, macnar_bioshell_2020, grabowski_synchrotron_2021, brzezinski_recognizing_2021, grabowski_rapid_2021}
+\begin{enumerate}
+    \item \underline{Macnar, J. M.}; Brzezinski, D.; Chruszcz, M.; Gront, D. Analysis of protein structures containing HEPES and MES molecules, \textit{Protein Science} \textbf{2022}, \textit{31.9: e4415}. https://doi.org/10.1002/pro.4415\vspace{-0.4em}
+    \item Akapo, O. O.*, \underline{Macnar, J. M.}*, Kryś, J. D., Syed, P. R., Syed, K., \& Gront, D. \emph{In silico} structural modeling and analysis of interactions of tremellomycetes cytochrome p450 monooxygenases cyp51s with substrates and azoles. \textit{International journal of molecular sciences} \textbf{2021} \textit{22} (15), 7811.\vspace{-0.4em}
+    \item Grabowski, M.; \underline{Macnar, J. M.}; Cymborowski, M.; Cooper, D. R.; Shabalin, I. G.; Gilski, M.; Brzezinski, D.; Kowiel, M.; Dauter, Z.; Rupp, B.; Wlodawer, A.; Jaskolski, M.; Minor, W. Rapid Response to Emerging Biomedical Challenges and Threats. \textit{IUCrJ} \textbf{2021}, \textit{8} (3). https://doi.org/10.1107/S2052252521003018.\vspace{-0.4em}
+    \item Brzezinski, D.; Porebski, P. J.; Kowiel, M.; \underline{Macnar, J. M.}; Minor, W. Recognizing and Validating Ligands with CheckMyBlob. \textit{Nucleic Acids Res.} \textbf{2021};,gkab296. https://doi.org/10.1093/nar/gkab296.\vspace{-0.4em}
+    \item Grabowski, M.; Cooper, D. R.; Brzezinski, D.; \underline{Macnar, J. M.}; Shabalin, I. G.; Cymborowski, M.; Otwinowski, Z.; Minor, W. Synchrotron Radiation as a Tool for Macromolecular X-Ray Crystallography: A XXI Century Perspective. \textit{Nucl. Instrum. Methods Phys. Res. Sect. B Beam Interact. Mater. At.} \textbf{2021}, \textit{489}, 30–40. https://doi.org/10.1016/j.nimb.2020.12.016.\vspace{-0.4em}
+    \item \underline{Macnar, J. M.}; Szulc, N. A.; Kryś, J. D.; Badaczewska-Dawid, A. E.; Gront, D. BioShell 3.0: Library for Processing Structural Biology Data. \textit{Biomolecules} \textbf{2020}, \textit{10} (3), 461. https://doi.org/10.3390/biom10030461.\vspace{-0.4em}
+    \item Perlinska, A. P.; \underline{Macnar, J. M.}; Sulkowska, J. I. Molecular Dynamics and Structural Comparison Approach to Understanding the Role of Knots in Proteins. \textit{TASK Q.} \textbf{2016}, \textit{20} (4), 373–381. https://doi.org/10.17466/tq2016/20.4/h.\vspace{-0.15em}
+\end{enumerate}
+
+{\vspace{0.5mm}}
+\end{minipage}
+}
+\end{paracol}
+\end{document}
